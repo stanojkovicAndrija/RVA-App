@@ -1,0 +1,28 @@
+
+insert into projekat (id,naziv,oznaka,opis) values(NEXTVAL('projekat_seq'),'Android','P1','Napraviti android mobilnu aplikaciju za prodaju u android studiu');
+insert into projekat (id,naziv,oznaka,opis) values(NEXTVAL('projekat_seq'),'EER','P2','Uraditi EER dijagram i UML dijagram');
+insert into projekat (id,naziv,oznaka,opis) values(NEXTVAL('projekat_seq'),'.NET','P3','Uraditi web aplikaciju sa .net i angular');
+insert into projekat (id,naziv,oznaka,opis) values(NEXTVAL('projekat_seq'),'Java','P4','Uraditi web aplikaciju sa javom i reactom');
+
+insert into projekat (id,naziv,oznaka,opis) values (-100,'TestNaz','TestOzn','TestOpis');
+
+insert into smer (id,naziv,oznaka) values (NEXTVAL('smer_seq'),'Inzenjerstvo informacionih sistema','IT');
+insert into smer (id,naziv,oznaka) values (NEXTVAL('smer_seq'),'Informacioni inzenjering','IZ');
+insert into smer (id,naziv,oznaka) values (NEXTVAL('smer_seq'),'Softversko Inzenjerstvo i informacione tehnologije','SW');
+insert into smer (id,naziv,oznaka) values (NEXTVAL('smer_seq'),'Energetika, elektronika i telekomunikacije','EE');
+
+insert into smer(id,naziv,oznaka) values(-100,'TestNaz','TestOzn');
+
+insert into grupa (id,oznaka,smer) values (NEXTVAL('grupa_seq'),'Grupa 1',1);
+insert into grupa (id,oznaka,smer) values (NEXTVAL('grupa_seq'),'Grupa 2',2);
+insert into grupa (id,oznaka,smer) values (NEXTVAL('grupa_seq'),'Grupa 3',3);
+insert into grupa (id,oznaka,smer) values (NEXTVAL('grupa_seq'),'Grupa 4',4);
+
+insert into grupa (id,oznaka,smer) values(-100,'TestOzn',1);
+
+insert into student (id,ime,prezime,broj_indeksa,grupa,projekat) values (NEXTVAL('student_seq'),'Andrija','Stanojkovic','IT75-2018',1,1);
+insert into student (id,ime,prezime,broj_indeksa,grupa,projekat) values (NEXTVAL('student_seq'),'Marko','Nedeljkovic','EE12-2018',4,4);
+insert into student (id,ime,prezime,broj_indeksa,grupa,projekat) values (NEXTVAL('student_seq'),'Milos','Nedeljkovic','SW53-2018',3,3);
+insert into student (id,ime,prezime,broj_indeksa,grupa,projekat) values (NEXTVAL('student_seq'),'Anastasija','Markovic','IZ10-2018',2,2);
+
+insert into student (id,ime,prezime,broj_indeksa,grupa,projekat) values (-100,'TestIme','TestPrez','TestBI',1,1);
